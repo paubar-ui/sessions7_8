@@ -24,6 +24,18 @@ for a in range(1,11):
 # Suppose you can only do additions. Write a program that reads two positive, integer numbers a and b. It
 # computes a**b.
 
+a = 2
+b = 10
+print(a**b)
+result = 1
+for pow in range(b):
+    new_result = 0
+    for base in range(a):
+        new_result += result
+    result = new_result
+print(f"The result is {result}")
+
+
 # Read an int number. Check if the number is a palindrome. (A palindrome number read backwards has the same
 # value. Example of palindrome numbers: 123454321, 999, 1598951)
 num = (input("Enter a number: "))
